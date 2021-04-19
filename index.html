@@ -20,64 +20,49 @@
         <link rel="stylesheet" href="css/style.css">
 
     </head>
-
     <body>
-        <!-- header trasparente in alto  -->
-        <header>
-            <div class="upgrade_btn">
-                <a class="white" href="">Effettua L'upgrade</a>
-            </div>
-        </header>
+        <!-- contenitore totale per flex  -->
+        <div class="huge_wrap flex">
 
-        <!-- nav bar di sinistra  -->
-        <nav class="navbar_colonna_left">
+            <!-- navbar di sinistra  -->            
+            <nav class="container_navbar_left">
 
-            <!-- logo spotify top-left  -->
-            <div class="contenitore_nav_logo">
-                <img src="img/logo.svg" alt="logo-spotify">
-            </div>
+                <!-- logo spotify alto sinistra  -->
+                <div class="navbar_logo">
+                    <img id="logo_spotify" src="img/logo.svg" alt="">
+                </div>
 
-            <!-- menù HOME del nav  -->
-            <div class="contenitore_nav_home grey">
-                <!-- home  -->
-                <div class="section_home">
-                    <i class="fas fa-home fa-2x"></i>
-                    <h3>Home</h3>
+                <!-- parte navigazione HOME  -->
+                <div class="section_nav_home">
+                    <a class="lightgrey" href=""><img src="img/home.svg" alt="">
+                    <h3>Home</h3></a>
                 </div>
-                <!-- cerca  -->
-                <div class="section_home">
-                    <i class="fas fa-home fa-2x"></i>
-                    <h3>Home</h3>
+                <!-- parte navigazione SEARCH -->
+                <div class="section_nav_home">
+                    <a class="grey" href=""><img src="img/search.svg" alt="">
+                    <h3>Cerca</h3></a>
                 </div>
-                <!-- libreria  -->
-                <div class="section_home">
-                    <i class="fas fa-home fa-2x"></i>
-                    <h3>Home</h3>
+                <!-- parte navigazione LIBRARY  -->
+                <div class="section_nav_home">
+                    <a class="grey" href=""><img src="img/libreria.svg" alt="">
+                    <h3>La tua libreria</h3></a>
                 </div>
-            </div>
-        </nav>
-        
-        <!-- main part  -->
-        <main>
-            
-            <!-- navigazione del main TITOLI GENERI  -->
-            <nav class="navbar_riga_main grey container">
-                <div class="col-lg-2">Uno</div>
-                <div class="col-lg-2">DUE</div>
-                <div class="col-lg-2">tre</div>
-                <div class="col-lg-2">quattro</div>
-                <div class="col-lg-2">cnque</div>
-                <div class="col-lg-2">sei</div>
+
                 
 
             </nav>
 
-        </main>
 
-        <!-- footer  -->
-        <footer>
-
-        </footer>
+            <!-- contenitore dell'head+main  -->
+            <div class="container_main_right">
+                <!-- header fixed  -->
+                <header>
+                    <div class="button_nav_up">
+                        <a href="">effettua l'upgrade</a>
+                    </div>
+                </header>
+            </div>
+        </div>
 
     </body>
 </html>

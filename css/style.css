@@ -9,83 +9,65 @@ body {
 .grey {
     color: #a3a3a3;
 }
-.white {
-    color: white;
+.lightgrey {
+    color: #d2d2d2;
 }
 a {
     text-decoration: none;
 }
-/* header  */
-header {
-    /* background-color: rgba(0, 0, 0, 0.1); */
-    background-color: red;
-    height: 60px;
-    width: calc(100% - 230px);
-    position: fixed;
-    top: 0;
-    left: 230px;
-}
-.upgrade_btn{
-    position: absolute;
-    right: 20px;
-    line-height: 30px;
-    top: 50%;
-    transform: translate(0, -50%);
-    padding: 0px 30px;
-    border: 1px solid white;
-    border-radius: 20px;
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: bold;
+.flex {
+    display: flex;
 }
 
-/* navbar di sinistra  */
-.navbar_colonna_left {
-    position: fixed;
-    background-color: blue;
+/* navbar sinistra  */
+.container_navbar_left {
+    background-color: black;
     height: 100vh;
-    width: 230px;
+    width: 250px;
+    padding: 20px;
 }
-
-.contenitore_nav_logo,
-.section_home {
-    padding-left: 20px;
-}
-.contenitore_nav_logo {
-    width: 100%;
+.navbar_logo {
     height: 60px;
-    background-color: orange;
 }
-.contenitore_nav_logo img {
-    width: 70%;
-    line-height: 60px;
-    height: 100%;
-    padding: 5px 0;
-    vertical-align: middle;
+#logo_spotify {
+    height: 30px;
 }
-.section_home {
+.section_nav_home {
     margin-top: 10px;
 }
-.section_home>i {
-    height: 30px;
-    size: 3;
+.section_nav_home>a>img {
+    height: 20px;
 }
-.section_home>h3 {
+.section_nav_home>a>h3 {
     display: inline-block;
-    margin-left: 5px;
     font-size: 0.8em;
+    margin-left: 5px;
 }
 
-/* main  */
-main {    
-    position: relative;
-    width: 100%;
-    top: 60px;
-    left: 230px;
+/* contenitore della parte destra  */
+.container_main_right {
     background-color: #141922;
-    height: calc(100vh - 60px);
+    height: 100vh;
+    width: 100%;
 }
-.navbar_riga_main {
 
-
+/* header  */
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 20px;
+}
+.button_nav_up {
+    align-self: center;
+}
+.button_nav_up>a {
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.7em;
 }
