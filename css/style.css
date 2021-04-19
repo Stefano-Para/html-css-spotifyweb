@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #141922;
+    font-family: 'Montserrat', sans-serif;
 }
 .grey {
     color: #a3a3a3;
@@ -15,9 +16,14 @@ a {
 }
 /* header  */
 header {
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    background-color: red;
     height: 80px;
+    width: 85%;
     position: relative;
+    position: fixed;
+    top: 0;
+    left: 15%;
 }
 .upgrade_btn{
     position: absolute;
@@ -27,6 +33,33 @@ header {
     transform: translate(0, -50%);
     padding: 5px 30px;
     border: 1px solid white;
-    border-radius: 15px;
+    border-radius: 20px;
     text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* navbar di sinistra  */
+nav {
+    background-color: blue;
+    height: 100vh;
+    width: 15%;
+}
+nav h3{
+    color: white;
+}
+.contenitore_nav_logo,
+.section_home {
+    padding-left: 20px;
+}
+.contenitore_nav_logo {
+    width: 100%;
+    height: 80px;
+    background-color: orange;
+}
+.contenitore_nav_logo img {
+    width: 70%;
+    line-height: 80px;
+    height: 80px;
+    vertical-align: middle;
 }
