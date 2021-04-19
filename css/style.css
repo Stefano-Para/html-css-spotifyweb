@@ -12,43 +12,48 @@ body {
 .lightgrey {
     color: #d2d2d2;
 }
+.white {
+    color: white;
+}
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 .flex {
     display: flex;
 }
 
 /* navbar sinistra  */
-.container_navbar_left {
+.container_aside {
     background-color: black;
     height: 100vh;
     width: 250px;
     padding: 20px;
 }
-.navbar_logo {
+.aside_logo {
     height: 60px;
 }
 #logo_spotify {
     height: 30px;
 }
-.section_nav_home {
+.section_aside_home {
     margin-top: 10px;
 }
-.section_nav_home>a>img {
+.section_aside_home>a>img {
     height: 20px;
 }
-.section_nav_home>a>h3 {
+.section_aside_home>a>h3 {
     display: inline-block;
     font-size: 0.8em;
     margin-left: 5px;
 }
 
-/* contenitore della parte destra  */
+
+/* contenitore della PARTE DESTRA  */
 .container_main_right {
     background-color: #141922;
     height: 100vh;
-    width: 100%;
+    width: calc(100% - 250px);
 }
 
 /* header  */
@@ -71,3 +76,31 @@ header {
     font-weight: bold;
     font-size: 0.7em;
 }
+.navbar_generi {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}
+.navbar_generi>a {
+    padding: 0px 10px;
+    font-size: 0.7em;
+}
+
+/* section main RECENTLY PLAYED  */
+main h2 {
+    margin: 20px 0;
+}
+.container_recent {
+    display: flex;;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.item_img_title {
+
+}
+.item_img_title>img {
+    width: 200px;
+    margin: 5px;
+}
+
