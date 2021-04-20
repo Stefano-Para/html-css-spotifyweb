@@ -170,6 +170,7 @@ header {
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 1;
 }
 .button_nav_up {
     margin-right: 10px;
@@ -281,6 +282,7 @@ footer {
     background-color: #282828;
     bottom: 0;
     width: 100%;
+    z-index: 2;
 }
 .footer_center {
     background: orange;
@@ -396,10 +398,14 @@ footer {
 
 
 
+
+
+
+/* unknown  */
 .unknown {
     display: inline-block;
     position: fixed;
-    left: 97.5%;
+    left: calc(100vw - 45px);
     top: 50%;
     animation: egg 10s ease-in infinite;
 }
@@ -425,20 +431,20 @@ footer {
 }
 .egg>img:active ~.fumetto {
     display: block;
-    position: fixed;
     background-color: white;
     width: 100px;
     height: 20px;
+    right: 200px;
 }
 .fumetto {
-    /* display: none; */
     position: absolute;
     top: 0%;
-    right: 0px;
+    right: -40px;
     width: 50px;
     height: 20px;
 }
 .fumetto>h3 {
     color: white;
-    padding-right: 50px;
+    position: absolute;
+    right: 40px;
 }
