@@ -392,3 +392,53 @@ footer {
     }
 }
 
+
+
+
+
+.unknown {
+    display: inline-block;
+    position: fixed;
+    left: 97.5%;
+    top: 50%;
+    animation: egg 10s ease-in infinite;
+}
+@keyframes egg {
+    0% {
+        opacity: 0;
+      }
+    70% {
+        opacity: 0;
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.egg>img {
+    width: 100px;
+}
+.egg>img:active {
+    display: none;
+}
+.egg>img:active ~.fumetto {
+    display: block;
+    position: fixed;
+    background-color: white;
+    width: 100px;
+    height: 20px;
+}
+.fumetto {
+    /* display: none; */
+    position: absolute;
+    top: 0%;
+    right: 0px;
+    width: 50px;
+    height: 20px;
+}
+.fumetto>h3 {
+    color: white;
+    padding-right: 50px;
+}
