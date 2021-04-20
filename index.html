@@ -29,6 +29,10 @@
 
                 <!-- logo spotify alto sinistra  -->
                 <div class="aside_logo">
+                    <!-- logo visibile solo in XS -->
+                    <div id="logo_xs">
+                        <img src="img/logo-small.svg" alt="">
+                    </div>
                     <img id="logo_spotify" src="img/logo.svg" alt="">
                 </div>
 
@@ -37,13 +41,15 @@
                     <a class="lightgrey" href=""><img src="img/home.svg" alt="">
                     <h3>Home</h3></a>
                 </div>
+
                 <!-- parte aside SEARCH -->
                 <div class="aside_section_home">
                     <a class="grey" href=""><img src="img/search.svg" alt="">
                     <h3>Cerca</h3></a>
                 </div>
+
                 <!-- parte aside LIBRARY  -->
-                <div class="aside_section_home">
+                <div class="aside_section_home last_home_grow">
                     <a class="grey" href=""><img src="img/libreria.svg" alt="">
                     <h3>La tua libreria</h3></a>
                 </div>
@@ -90,18 +96,20 @@
                 </div>
 
                 <!-- sezione aside con profilo/installa app  -->
-                <div class="aside_profile_top">
-                    <a class="grey" href=""><img src="img/download.svg" alt=""><span> Installa app</span></a>
-                    
+                <div class="aside_container_profile">
+                    <div class="aside_profile_top">
+                        <a class="grey" href=""><img src="img/download.svg" alt=""><span> Installa app</span></a>
+                        
+                    </div>
+                    <div class="aside_profile_bot">
+                        <a href="">
+                            <img src="img/profile.svg" alt="">
+                        </a>
+                            <h3 class="lightgrey">John Doe</h3>
+                    </div>
+
                 </div>
-                <div class="aside_profile_bot">
-                    <a href="">
-                        <img src="img/profile.svg" alt="">
-                    </a>
-                        <h3 class="lightgrey">John Doe</h3>
-                    
-                </div>
-                
+                <!-- chiusura aside profile container  -->
             </div>
             <!-- fine container aside  -->
 
@@ -142,8 +150,7 @@
                             <!-- item heavy metal -->
                             <div class="item_img_title">
                                 <div class="contenitore_img">
-                                    <img src="img/metal_lifting.jpg" alt="">
-
+                                    <img class="prova" src="img/metal_lifting.jpg" alt="">
                                     <!-- OVERLAY  -->
                                     <div class="overlay_plus">
                                         <i class="far fa-play-circle fa-3x"></i>
@@ -158,6 +165,10 @@
                             <div class="item_img_title">
                                 <div class="contenitore_img">
                                     <img src="img/stranger.jpeg" alt="">
+                                    <!-- OVERLAY  -->
+                                    <div class="overlay_plus">
+                                        <i class="far fa-play-circle fa-3x"></i>
+                                    </div>
                                 </div>
                                 <h3 class="lightgrey">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
                                 <h5 class="grey">Kyle Dixon & Michael Stein</h5>
@@ -167,6 +178,10 @@
                             <div class="item_img_title">
                                 <div class="contenitore_img">
                                     <img src="img/aquietplace.jpeg" alt="">
+                                    <!-- OVERLAY  -->
+                                    <div class="overlay_plus">
+                                        <i class="far fa-play-circle fa-3x"></i>
+                                    </div>
                                 </div>
                                 <h3 class="lightgrey">A quiet place</h3>
                                 <h5 class="grey">Subtitle</h5>
@@ -176,6 +191,10 @@
                             <div class="item_img_title">
                                 <div class="contenitore_img">
                                     <img src="img/split.jpeg" alt="">
+                                    <!-- OVERLAY  -->
+                                    <div class="overlay_plus">
+                                        <i class="far fa-play-circle fa-3x"></i>
+                                    </div>
                                 </div>
                                 <h3 class="lightgrey">Split</h3>
                                 <h5 class="grey">Subtitle</h5>
@@ -185,6 +204,10 @@
                             <div class="item_img_title">
                                 <div class="contenitore_img">
                                     <img src="img/cure.jpeg" alt="">
+                                    <!-- OVERLAY  -->
+                                    <div class="overlay_plus">
+                                        <i class="far fa-play-circle fa-3x"></i>
+                                    </div>
                                 </div>
                                 <h3 class="lightgrey">A cure for wellness</h3>
                                 <h5 class="grey">ilfilmpiùbruttomaivisto</h5>
@@ -194,6 +217,10 @@
                             <div class="item_img_title">
                                 <div class="contenitore_img">
                                     <img src="img/sinister.jpeg" alt="">
+                                    <!-- OVERLAY  -->
+                                    <div class="overlay_plus">
+                                        <i class="far fa-play-circle fa-3x"></i>
+                                    </div>
                                 </div>
                                     
                                 <h3 class="lightgrey">Sinister</h3>
@@ -213,6 +240,10 @@
                             <div class="item_img_title">
                                 <div class="contenitore_img">
                                     <img src="img/radar.jpeg" alt="">
+                                    <!-- OVERLAY  -->
+                                    <div class="overlay_plus">
+                                        <i class="far fa-play-circle fa-3x"></i>
+                                    </div>
                                 </div>
                                     <h3 class="lightgrey">Rlease Radar</h3>
                                 </div>
@@ -221,8 +252,16 @@
                             <div class="item_img_title">
                                 <div class="contenitore_img">
                                     <img src="img/mixdaily.jpeg" alt="">
+                                    <!-- OVERLAY  -->
+                                    <div class="overlay_plus">
+                                        <i class="far fa-play-circle fa-3x"></i>
+                                    </div>
                                 </div>
                                 <h3 class="lightgrey">Daily Mix</h3>
+                                <!-- OVERLAY  -->
+                                <div class="overlay_plus">
+                                    <i class="far fa-play-circle fa-3x"></i>
+                                </div>
                             </div>
                         </section>
                         <!-- chiusura section 2/3 del main  -->
@@ -238,6 +277,10 @@
                             <div class="item_img_title">
                                 <div class="contenitore_img">
                                     <img src="img/youg.jpeg" alt="">
+                                    <!-- OVERLAY  -->
+                                    <div class="overlay_plus">
+                                        <i class="far fa-play-circle fa-3x"></i>
+                                    </div>
                                 </div>
                                 <h3 class="lightgrey">Young Beatiful</h3>
                                 <h5 class="grey">Subtitle</h5>
@@ -247,6 +290,10 @@
                             <div class="item_img_title">
                                 <div class="contenitore_img">
                                     <img src="img/einaudi.jpeg" alt="">
+                                    <!-- OVERLAY  -->
+                                    <div class="overlay_plus">
+                                        <i class="far fa-play-circle fa-3x"></i>
+                                    </div>
                                 </div>
                                 <h3 class="lightgrey">Einaudi</h3>
                                 <h5 class="grey">Subtitle</h5>
@@ -266,7 +313,13 @@
         <footer>
             <!-- foot-left  -->
             <div class="footer_left">
-
+                <img src="img/sinister.jpeg" alt="">
+                <div class="text_footer_left">
+                    <h5 class="white">Sinister</h5>
+                    <h6 class="grey">Brano Nome</h6>
+                </div>
+                <a href=""><i class="far fa-heart"></i></a>
+                <a href=""><i class="far fa-folder"></i></a>
             </div>
             <!-- foot-center  -->
             <div class="footer_center">

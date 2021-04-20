@@ -37,7 +37,7 @@ a {
     background-color: black;
     height: 100vh;
     width: 230px;
-    padding: 10px 10px 70px 10px;
+    padding: 10px 10px 90px 10px;
 }
 .container_aside a:hover {
     color: white;
@@ -211,11 +211,11 @@ header {
 
 main h2 {
     font-size: 1em;
-    margin: 40px 10px 10px;
+    margin: 40px 15px 10px;
 }
 .item_img_title {
     margin: 5px 10px 5px 5px;
-    width: 160px;
+    width: 15%;
 }
 .contenitore_img>img {
     width: 100%;
@@ -244,12 +244,10 @@ main h2 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.contenitore_img>img:hover .overlay_plus {
+.contenitore_img img:hover ~.overlay_plus {
     display: block;
+    cursor: pointer;
 }
-
-
-
 
 .item_img_title>h3 {
     font-size: 0.7em;
@@ -275,18 +273,12 @@ h5.grey {
 
 /* sezione 3/3 main - popular artist  */
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-INSERIRE IN UN DIV I TESTI h3 e H5 sopra i container_section
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1  */
-
 footer {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    height: 60px;
-    background-color: red;
+    height: 80px;
+    background-color: #282828;
     bottom: 0;
     width: 100%;
 }
@@ -296,14 +288,81 @@ footer {
 }
 .footer_right,
 .footer_left {
+    display: flex;
     width: 230px;
     background-color: blue;
 }
+.footer_left {
+    justify-content: space-around;
+    align-items: center;
+}
+.footer_left>img {
+    height: 50px;
+}
+.footer_left>a>i {
+    color: white;
+}
 
 
+
+
+
+/* MD */
+@media screen and (min-width: 993px) {
+    .item_img_title {
+        margin: 5px 10px 5px 5px;
+        width: 14%;
+    }
+}
+
+/* SM  */
+@media screen and (min-width: 768px) {
+    .item_img_title {
+        margin: 5px 10px 5px 5px;
+        width: 20%;
+    }
+    #logo_xs,
+    #home_xs {
+        display: none;
+    }
+}
+
+/* XS  */
 @media screen and (max-width: 767px) {
     .container_aside {
         width: 50px;
+        justify-content: flex-start;
+    }
+    .last_home_grow {
+        flex-grow: 1;
+    }
+    .aside_section_home a>img:hover {
+        color: white;
+        cursor: pointer;
+        background-color: grey;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    #logo_xs {
+        width: 30px;
+        height: 30px;
+        display: block;
+        color: white;
+    }
+    #logo_xs>img {
+        width: 100%;
+        height: 100%;
+    }
+    #logo_spotify,
+    .aside_section_home>a>h3,
+    .aside_playlist,
+    .aside_profile_top span,
+    .aside_profile_bot h3 {
+        display: none;
+    }
+    .aside_profile_top>a>img {
+        width: 100%;
+        height: 100%;
     }
     .container_main_right {
         width: calc(100% - 50px);
@@ -311,9 +370,21 @@ footer {
     header {
         width: calc(100% - 50px);
     }
+    main h2 {
+        font-size: 1em;
+        margin: 40px 30px 10px;
+    }
+    h5.grey {
+        font-size: 0.6em;
+        margin: 5px 30px;
+    }
+    .item_img_title {
+        margin: 5px 10px 5px 20px;
+        width: 40%;
+    }
     .footer_right,
     .footer_left {
         width: 30%;
     }
-    
 }
+
