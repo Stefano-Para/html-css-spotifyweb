@@ -313,10 +313,14 @@ footer {
         margin: 5px 10px 5px 5px;
         width: 14%;
     }
+    #logo_xs,
+    #home_xs {
+        display: none;
+    }
 }
 
 /* SM  */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     .item_img_title {
         margin: 5px 10px 5px 5px;
         width: 20%;
