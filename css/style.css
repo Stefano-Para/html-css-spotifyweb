@@ -359,11 +359,29 @@ footer {
     text-align: center;
     color: white;
 }
-
 .footer_center .fa-play-circle:hover {
     transform: scale(1.5);
 }
+
+
 /* barra audio footer center  */
+.linebar_after,
+.linebar_before {
+    color: white;
+    height: 4px;
+    font-size: 0.6em;
+    font-weight: bold;
+    top: -4px;
+}
+.linebar_before {
+    position: relative;
+    right: 30px;    
+}
+.linebar_after {
+    position: absolute;
+    right: -30px;
+}
+
 .container_audio_bar {
     width: 70%;
     margin: 0 auto;
@@ -373,12 +391,14 @@ footer {
     border-radius: 5px;
 }
 .linebar_total {
+    position: relative;
     cursor: pointer;
-    width: 100%;    
+    width: 100%;
     background-color: #5a5a5a;
 }
 .linebar_left {
-    position: relative;
+    position: absolute;
+    top: 0px;
     width: 25%;
     background-color: #c1c1c1;
 }
@@ -536,14 +556,17 @@ footer {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     .item_img_title {
         width: 40%;
     }
     .footer_center_buttons {
         width: 90px;
         font-size: 50%;
-    } 
+    }
+    .container_audio_bar {
+        transform: scale(0.7);
+    }
 }
     
 
