@@ -93,6 +93,7 @@ a {
 
 /* aside playlist  */
 .aside_playlist {
+    overflow: auto;
     flex-grow: 1;
 }
 .aside_playlist h3 {
@@ -557,7 +558,7 @@ footer {
 /* unknown  */
 .unknown {
     display: none;
-    /* display: inline-block; */
+    display: inline-block;
     position: fixed;
     left: calc(100vw - 45px);
     top: 50%;
